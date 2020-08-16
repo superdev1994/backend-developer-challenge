@@ -26,4 +26,4 @@ class GroupViewSet(viewsets.ModelViewSet):
 class AirportViewset(viewsets.ModelViewSet):
     queryset = Airport.objects.all()
     serializer_class = AirportSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.AllowAny]
