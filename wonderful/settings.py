@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'wonderful.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'wonderful',
-        'USER': 'postgres',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME': 'dfvdt50563cg62',
+        'USER': 'zysguyidyyuxxx',
+        'PASSWORD': '69a900a15667e365187a5e519a17c0e3aec4c396f207f6b1da4833667a588bfd',
+        'HOST': 'ec2-3-215-207-12.compute-1.amazonaws.com',
         'PORT': ''                 # set to empty string for default
     }
 }
@@ -126,6 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 
 REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
