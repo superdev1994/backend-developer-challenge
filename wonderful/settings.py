@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '!)bo)2p4hai$(j7u59sqn5s&pmnef)25tw5l5v4&=lg%_1h5@='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wonderful-backend.herokuapp.com']
 
 
 # Application definition
