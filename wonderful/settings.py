@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '!)bo)2p4hai$(j7u59sqn5s&pmnef)25tw5l5v4&=lg%_1h5@='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['wonderful-backend.herokuapp.com']
 
@@ -81,11 +81,16 @@ WSGI_APPLICATION = 'wonderful.wsgi.application'
 
 DATABASES = {
     'default': {
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'dfvdt50563cg62',
+        # 'USER': 'zysguyidyyuxxx',
+        # 'PASSWORD': '69a900a15667e365187a5e519a17c0e3aec4c396f207f6b1da4833667a588bfd',
+        # 'HOST': 'ec2-3-215-207-12.compute-1.amazonaws.com',
+        'HOST': 'localhost',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dfvdt50563cg62',
-        'USER': 'zysguyidyyuxxx',
-        'PASSWORD': '69a900a15667e365187a5e519a17c0e3aec4c396f207f6b1da4833667a588bfd',
-        'HOST': 'ec2-3-215-207-12.compute-1.amazonaws.com',
+        'NAME': 'wonderful',
+        'USER': 'postgres',
+        'PASSWORD': '',
         'PORT': ''                 # set to empty string for default
     }
 }
@@ -128,12 +133,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+# PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+# STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 REST_FRAMEWORK = {
     'PAGE_SIZE': 10,
